@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-	"eslint:github-action": "node ./node_modules/eslint/bin/eslint -c .eslintrc.json --quiet .",
-        "eslint:fix": "node ./node_modules/eslint/bin/eslint --fix ."
+    "eslint:github-action": "node ./node_modules/eslint/bin/eslint -c .eslintrc.json --quiet .",
+    "eslint:fix": "node ./node_modules/eslint/bin/eslint --fix ."
   },
   "keywords": [
     "github-actions",
