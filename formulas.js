@@ -5,8 +5,8 @@ module.exports = {
     // Alice requires either all-day Saturday or all-day Sunday off.
     {and: [
       {or: [{not: 'Alice13'}, {not: 'Alice11'}]},
-      {or: [{not: 'Alice14'}, {not: 'Alice12'}]},
-      {or: [{not: 'Alice13'}, {not: 'Alice12'}]},
+      {or: [{not: 'Alice14'}, {not: 'Alice12'}]},  
+      {or: [{not: 'Alice13'}, {not: 'Alice12'}]},  
       {or: [{not: 'Alice11'}, {not: 'Alice14'}]},
       // Bob can't work evenings
       {not: 'Bob12'},
