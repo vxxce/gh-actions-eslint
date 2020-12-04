@@ -4,9 +4,9 @@ module.exports = {
     // Scheduling Saturday and Sunday AM and PM shifts
     // Alice requires either all-day Saturday or all-day Sunday off.
     {and: [
-      {or: [{not: 'Alice13'}, {not: 'Alice11'}]},    
-      {or: [{not: 'Alice14'}, {not: 'Alice12'}]},   
-      {or: [{not: 'Alice13'}, {not: 'Alice12'}]}, 
+      {or: [{not: 'Alice13'}, {not: 'Alice11'}]},
+      {or: [{not: 'Alice14'}, {not: 'Alice12'}]},
+      {or: [{not: 'Alice13'}, {not: 'Alice12'}]},
       {or: [{not: 'Alice11'}, {not: 'Alice14'}]},
       // Bob can't work evenings
       {not: 'Bob12'},
@@ -19,7 +19,7 @@ module.exports = {
       {or: [{or: ['Bob11', 'Bob12']}, {or: ['Bob13', 'Bob14']}]},
       {or: [{or: ['Charlie11', 'Charlie12']}, {or: ['Charlie13', 'Charlie14']}]},
       // Every shift must be covered
-      {or: [{or: ['Alice11', 'Bob11']}, {or: ['Charlie11', 'Bob11']}]},   
+      {or: [{or: ['Alice11', 'Bob11']}, {or: ['Charlie11', 'Bob11']}]},
       {or: [{or: ['Alice12', 'Bob12']}, {or: ['Charlie12', 'Bob12']}]},
       {or: [{or: ['Alice13', 'Bob13']}, {or: ['Charlie13', 'Bob13']}]},
       {or: [{or: ['Alice14', 'Bob14']}, {or: ['Charlie14', 'Bob14']}]}
